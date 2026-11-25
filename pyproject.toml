@@ -1,0 +1,13 @@
+[project]
+name = "safe-walk-escort-robot"
+version = "0.1.0"
+description = "Night pedestrian escort robot design and MuJoCo scenes"
+requires-python = ">=3.11"
+dependencies = ["mujoco>=3.17,<4"]
+
+[dependency-groups]
+dev = ["pytest>=8,<10"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

@@ -16,3 +16,21 @@
 
 ## 현재 단계
 문제 정의와 요구사항을 정리하고, 로봇 구조·안전 개념·시뮬레이션 장면을 설계 중이다. 기능과 효과는 아직 검증 전이다.
+
+## 현재 작업물
+
+- [D03 요구사항 명세](docs/requirements.md): 요구사항 계층, 수치 목표, 우선순위, 판정 방법
+- [03 Design 초안](docs/design.md): 시스템 구조, 장면 구성, 안전 개념
+- [MuJoCo 500m 장면](scenes/safe_walk_500m.xml), [2km 장면](scenes/safe_walk_2000m.xml): 첫 배치 장면 v0
+- [판정 코드](src/judge.py)와 [판정 테스트](tests/test_judge.py)
+
+## 실행
+
+```powershell
+uv sync --group dev
+uv run pytest -q tests
+uv run python tools/build_scenes.py
+uv run python -m mujoco.viewer --mjcf=scenes/safe_walk_500m.xml
+```
+
+2km 장면을 보려면 마지막 명령의 파일명을 `safe_walk_2000m.xml`로 바꾼다. 장면 v0는 도로·보행로·로봇·보행자·버튼의 배치를 보여준다. 자율 주행과 실제 112 연동은 아직 구현되지 않았다.
