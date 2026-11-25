@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <mujoco model="safe_walk_2000m">
+  <!--Temporary four-wheel visual marker; final robot morphology is not selected.-->
   <compiler angle="radian" />
   <option timestep="0.02" gravity="0 0 -9.81" />
   <statistic center="10 0 0" extent="25" />

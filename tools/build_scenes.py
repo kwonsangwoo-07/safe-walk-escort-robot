@@ -26,6 +26,7 @@ def box(parent: ET.Element, name: str, pos: str, size: str, rgba: str) -> None:
 
 def make_scene(length: int) -> ET.ElementTree:
     root = ET.Element("mujoco", model=f"safe_walk_{length}m")
+    root.append(ET.Comment("Temporary four-wheel visual marker; final robot morphology is not selected."))
     element(root, "compiler", angle="radian")
     element(root, "option", timestep="0.02", gravity="0 0 -9.81")
     element(root, "statistic", center="10 0 0", extent="25")

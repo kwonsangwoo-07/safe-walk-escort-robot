@@ -23,6 +23,7 @@
 - [03 Design 초안](docs/design.md): 시스템 구조, 장면 구성, 안전 개념
 - [MuJoCo 500m 장면](scenes/safe_walk_500m.xml), [2km 장면](scenes/safe_walk_2000m.xml): 첫 배치 장면 v0
 - [판정 코드](src/judge.py)와 [판정 테스트](tests/test_judge.py)
+- [로봇 형태 비교](docs/robot-form-options.md): 바퀴형·사족형·이족형 구상 이미지와 선택 기준
 
 ## 실행
 
@@ -33,4 +34,4 @@ uv run python tools/build_scenes.py
 uv run python -m mujoco.viewer --mjcf=scenes/safe_walk_500m.xml
 ```
 
-2km 장면을 보려면 마지막 명령의 파일명을 `safe_walk_2000m.xml`로 바꾼다. 장면 v0는 도로·보행로·로봇·보행자·버튼의 배치를 보여준다. 자율 주행과 실제 112 연동은 아직 구현되지 않았다.
+2km 장면을 보려면 마지막 명령의 파일명을 `safe_walk_2000m.xml`로 바꾼다. 장면 v0는 도로·보행로·로봇·보행자·버튼의 배치를 보여준다. **로봇 형태는 아직 미정이며, XML의 4바퀴는 임시 외형이다.** 자율 주행과 실제 112 연동은 아직 구현되지 않았다.
