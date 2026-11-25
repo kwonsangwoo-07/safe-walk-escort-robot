@@ -13,13 +13,13 @@
     <light name="night_ambient" directional="true" pos="0 0 50" dir="-0.2 0 -1" diffuse="0.22 0.24 0.32" ambient="0.07 0.08 0.12" />
     <geom name="ground" type="plane" pos="0 0 -0.02" size="540 30 0.1" rgba="0.10 0.14 0.13 1" />
     <geom name="pedestrian_path" type="box" pos="250.0 0 0.04" size="250.0 1.5 0.04" rgba="0.38 0.40 0.42 1" />
-    <geom name="road" type="box" pos="250.0 -6 0.01" size="250.0 3.5 0.01" rgba="0.12 0.13 0.17 1" />
-    <geom name="curb" type="box" pos="250.0 -1.7 0.12" size="250.0 0.08 0.12" rgba="0.75 0.75 0.65 1" />
+    <geom name="left_residential_wall" type="box" pos="250.0 -2.4 0.6" size="250.0 0.08 0.6" rgba="0.28 0.25 0.23 1" />
+    <geom name="right_residential_wall" type="box" pos="250.0 2.4 0.6" size="250.0 0.08 0.6" rgba="0.32 0.28 0.25 1" />
     <geom name="transit_stop" type="box" pos="-7 6 1.5" size="4 1.5 1.5" rgba="0.16 0.35 0.48 1" />
-    <geom name="residence_1" type="box" pos="125.0 7 2" size="3 2 2" rgba="0.25 0.27 0.31 1" />
-    <geom name="residence_2" type="box" pos="250.0 7 2" size="3 2 2" rgba="0.25 0.27 0.31 1" />
-    <geom name="residence_3" type="box" pos="375.0 7 2" size="3 2 2" rgba="0.25 0.27 0.31 1" />
-    <geom name="residence_4" type="box" pos="500 7 2" size="3 2 2" rgba="0.25 0.27 0.31 1" />
+    <geom name="residence_1" type="box" pos="125.0 -6 2" size="3 2 2" rgba="0.25 0.27 0.31 1" />
+    <geom name="residence_2" type="box" pos="250.0 6 2" size="3 2 2" rgba="0.25 0.27 0.31 1" />
+    <geom name="residence_3" type="box" pos="375.0 -6 2" size="3 2 2" rgba="0.25 0.27 0.31 1" />
+    <geom name="residence_4" type="box" pos="500 6 2" size="3 2 2" rgba="0.25 0.27 0.31 1" />
     <geom name="lamp_post_0" type="cylinder" pos="0 2.6 2" size="0.07 2" rgba="0.28 0.29 0.32 1" />
     <geom name="lamp_head_0" type="sphere" pos="0 2.6 4.05" size="0.18" rgba="0.9 0.82 0.45 1" />
     <geom name="lamp_post_100" type="cylinder" pos="100 2.6 2" size="0.07 2" rgba="0.28 0.29 0.32 1" />

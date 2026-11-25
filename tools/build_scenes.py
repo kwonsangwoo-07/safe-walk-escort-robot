@@ -56,14 +56,15 @@ def make_scene(length: int) -> ET.ElementTree:
         rgba="0.10 0.14 0.13 1",
     )
     box(world, "pedestrian_path", f"{length / 2} 0 0.04", f"{length / 2} 1.5 0.04", "0.38 0.40 0.42 1")
-    box(world, "road", f"{length / 2} -6 0.01", f"{length / 2} 3.5 0.01", "0.12 0.13 0.17 1")
-    box(world, "curb", f"{length / 2} -1.7 0.12", f"{length / 2} 0.08 0.12", "0.75 0.75 0.65 1")
+    box(world, "left_residential_wall", f"{length / 2} -2.4 0.6", f"{length / 2} 0.08 0.6", "0.28 0.25 0.23 1")
+    box(world, "right_residential_wall", f"{length / 2} 2.4 0.6", f"{length / 2} 0.08 0.6", "0.32 0.28 0.25 1")
 
     # The origin is a transit stop or an arterial street. Homes may lie anywhere
     # along the route; the endpoint is a route boundary, not every user's home.
     box(world, "transit_stop", "-7 6 1.5", "4 1.5 1.5", "0.16 0.35 0.48 1")
     for index, x in enumerate((length / 4, length / 2, length * 3 / 4, length), start=1):
-        box(world, f"residence_{index}", f"{x} 7 2", "3 2 2", "0.25 0.27 0.31 1")
+        side = -6 if index % 2 else 6
+        box(world, f"residence_{index}", f"{x} {side} 2", "3 2 2", "0.25 0.27 0.31 1")
 
     # Simple streetlight markers make the long route legible without pretending
     # to reproduce a real neighborhood or measured illumination.

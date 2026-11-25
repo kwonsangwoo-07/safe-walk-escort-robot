@@ -19,6 +19,7 @@
 
 ## 현재 작업물
 
+- [D01 문제 정의서](docs/problem.md): 대표 사용자, 현재 귀가 흐름, 불편의 숫자와 근거, 로봇이 맡는 단계
 - [D03 요구사항 명세](docs/requirements.md): 요구사항 계층, 수치 목표, 우선순위, 판정 방법
 - [03 Design 초안](docs/design.md): 시스템 구조, 장면 구성, 안전 개념
 - [MuJoCo 500m 장면](scenes/safe_walk_500m.xml), [2km 장면](scenes/safe_walk_2000m.xml): 첫 배치 장면 v0
